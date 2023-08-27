@@ -1,9 +1,9 @@
 # Maple_board_project
 ## 학원에서 배웠던 기술들로 간단하게 메이플 게시판을 만들어보았습니다.
 
-##언어: Java, Javascript
-##프레임워크: Spring
-##데이터베이스: Oracle
+## 언어: Java, Javascript
+## 프레임워크: Spring
+## 데이터베이스: Oracle
 
 기능
 1. 회원가입, 로그인
