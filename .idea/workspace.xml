@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="21319ef7-92df-4e52-89c4-a702bbeb16a9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/44/src/main/java/com/maple/spring/boardcontroller/boardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/44/src/main/java/com/maple/spring/boardcontroller/boardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44/src/main/java/com/maple/spring/boardservice/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/44/src/main/java/com/maple/spring/boardservice/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44/src/main/java/com/maple/spring/boardservice/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/44/src/main/java/com/maple/spring/boardservice/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44/src/main/resources/Configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/44/src/main/resources/Configuration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44/src/main/webapp/WEB-INF/views/board/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/44/src/main/webapp/WEB-INF/views/board/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44/src/main/webapp/WEB-INF/views/users/signup_form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/44/src/main/webapp/WEB-INF/views/users/signup_form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44/target/classes/Configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/44/target/classes/Configuration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44/target/classes/com/maple/spring/boardcontroller/boardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/44/target/classes/com/maple/spring/boardcontroller/boardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44/target/classes/com/maple/spring/boardservice/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/44/target/classes/com/maple/spring/boardservice/BoardService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44/target/classes/com/maple/spring/boardservice/BoardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/44/target/classes/com/maple/spring/boardservice/BoardServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/44/target/m2e-wtp/web-resources/META-INF/maven/com.maple/spring/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/44/target/m2e-wtp/web-resources/META-INF/maven/com.maple/spring/pom.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2T4E8Hy8Uy6DUzSJjeAkmRZsjMg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "댓글기능브랜치",
+    "last_opened_file_path": "C:/Acorn202304/demo"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="21319ef7-92df-4e52-89c4-a702bbeb16a9" name="Changes" comment="" />
+      <created>1690293791897</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690293791897</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,462 @@
+@charset "UTF-8";
+* {
+       font-family: "NanumBarunGothic" , "Malgun Gothic" , sans-serif; 
+       letter-spacing: -0.03em; 
+   }
+   .container {
+       height: 100vh; 
+   }
+   .con_title {
+       font-size: 34px;
+       color: #333;
+       margin-top: 60px;
+       width: 72%;
+       margin-bottom: 30px;
+       height: 40px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       margin-left: 200px;
+   }
+    .con_title_btn {
+        line-height: 1; 
+    }
+    .back_btn {
+        font-size: 13px; 
+        color: #666; 
+        padding: 8px 11px 8px 11px; 
+        line-height: 1;  
+        border: 1px solid #e6e6e6; 
+        text-decoration: none; 
+   }
+   .qs_title {
+       width: 72%;
+       line-height: 1.3;
+       min-height: 36px;
+       border-top: 1px solid #7e7e7e;
+       color: #333;
+       font-size: 24px;
+       background-color: #f9f9f9;
+       word-break: break-all;
+       font-weight: bold;
+       margin-left: 200px;
+       padding: 37px 21px 30px;
+   }
+   .qs_title span {
+       color: #333333;
+   }
+   .qs_info_wrap {
+       width: 72%;
+        height: 55px; 
+       line-height: 55px;
+       border-top: 1px solid #e3e3e3;
+       border-bottom: 1px solid #e3e3e3;
+       margin-bottom: 30px;
+       margin-left: 200px;
+        display: flex;
+        justify-content: space-between;
+   }
+   .qs_id {
+       margin-left: 27px;
+       height: 100%;
+       font-size: 13px;
+   }
+   .qs_id a {
+       color: #888;
+       text-decoration: none;
+   }
+   .qs_id a img {
+       margin-bottom: 3px;
+       margin-right: 5px;
+       vertical-align: middle;
+   }
+   .qs_info {
+      display: flex;
+   }
+   .qs_info p {
+       font-size: 12px;
+       color: #aaa;
+        margin-right: 25px; 
+       line-height: 1;
+        margin-top: 21px; 
+       font-family: "Tahoma";
+   }
+   .qs_info p img {
+        margin-right: 4px; 
+       margin-bottom: 2px; 
+   }
+   .qs_info p.last {
+        margin-right: 27px; 
+   }
+   .qs_info p img {
+        margin-right: 4px; 
+        margin-bottom: 2px; 
+   }
+   .qs_info span {
+       line-height: 1;
+        margin-top: 12px; 
+        padding-left: 31px; 
+       background: url(https://ssl.nexon.com/s2/game/maplestory/renewal/common/btn_line_img.png) left center no-repeat;
+   }
+   .qs_info span.report {
+        margin-right: 27px; 
+        padding: 0; 
+        margin-left: 9px; 
+   }
+   .qs_text {  
+        font-size: 16px; 
+        color: #333; 
+        width: 72%;
+        margin-left: 200px;
+        padding-left: 30px;
+        margin-bottom: 40px;
+   }
+   .empathy_info {
+	    display: flex;
+	    justify-content: center;
+	    width: 72%;
+	    margin-left: 200px;
+   }
+   #agreeBox {
+   	   padding: 13px 25px 16px 25px;
+	   border: 1px solid #e3e3e3;
+	   border-image: none;
+	   line-height: 51px;
+	   margin-left: 5px;
+	   background-color: #f7f7f7;
+   }
+   #agreeCount {
+   	   text-decoration: none;
+   	   color: #666;
+   }
+   .next_prev {
+       display: flex;
+       width: 72%;
+       margin-left: 200px;
+       height: 100px;
+       flex-direction: column;
+   }
+   .next {
+       border-top: 1px solid #e3e3e3;
+       border-bottom: 1px solid #e3e3e3;
+       height: 50%;
+       width: 95%;
+       margin: 0 auto;
+   }
+   .prev {
+       border-top: 1px solid #e3e3e3;
+       height: 50%;
+       width: 95%;
+       margin: 0 auto;
+   }
+   .prev_btn, .next_btn {
+       color: #666;
+       text-decoration: none;
+       font-size: 15px;
+       margin-bottom: 10px;
+   }
+   .prev_content, .next_content {
+       font-size: 15px;
+       color: #666;
+       text-decoration: none;
+       margin-bottom: 10px;
+       margin-left: 10px;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       white-space: nowrap;
+       max-width: 50px;
+   }
+   .next_prev span {
+       display: inline-block;
+       margin-top: -10px;
+   }
+   .next_prev img {
+       margin-right: 6px;
+       margin-bottom: 5px;
+   }
+   .regdate {
+       float: right; 
+       font-size: 12px;
+       font-family: "Tahoma";
+       color: #aaa;
+       margin-top: 15px;
+   }
+   .next_content_box, .prev_content_box {
+      	margin-left: 20px;
+   }
+   .noClick {
+      	pointer-events: none;
+      	cursor: default;
+   }
+   .hidden_regdate_img {
+   		display: none;
+   }
+   .newAgreeBox {
+   		display: inline-block;
+   		padding-left: 15px;
+   		padding-right: 85px;
+		border: 1px solid #e3e3e3;
+		border-image: none;
+		line-height: 51px;
+	 	background-color: white;
+	 	color: #9fadca;
+	 	font-size: 13px;
+   }
+   .comment_box {
+    	margin: 40px 170px 40px 205px;
+   }
+   .comment_textarea {
+   		height: 200px;
+   		margin-top: 45px;
+   		background-color: #e8eaee;
+    	border: 1px solid #dcdde1;
+   }
+   .comment_counts {
+   		height: 50px;
+   		border-top: 1px solid #cecece;
+    	border-bottom: 1px solid #cecece;
+    	background-color: #f9f9f9;
+    	display: flex;
+    	align-items: center;
+   }
+   .comments {
+   		font-size: 16px;
+    	color: #333333;
+    	margin-left: 27px;
+   }
+   .howManyComments {
+   		color: #f68400;
+    	margin-left: 5px;
+   }
+   .users_comments {
+   }
+   .comment_paging {
+   		height: 50px;
+    	border-bottom: 1px solid #e3e3e3;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+   }
+   .comment_textarea_menu {
+   		height: 88%;
+    	margin: 9px 9px 11px 9px;
+   }
+   .textarea {
+   		height: 70%;
+   }
+   .textarea_btn {
+   		height: 30%;
+   		display: flex;
+   		justify-content: space-between;
+   		align-items: center;
+   }
+   textarea {
+   		display: block;
+    	width: 100%;
+    	height: 100%;
+    	background-color: white;
+   }
+   .textarea_emo {
+   		margin-left: 20px;
+   		margin-top: 16px;
+   }
+   .textarea_font_refrain_box {
+   		display: inline-block;
+    	margin-left: 690px;
+    	color: #666666;
+    	margin-top: 16px;
+   }
+   .textarea_submitBtn {
+   		min-width: 53px;
+    	font-size: 16px;
+    	color: #fff !important;
+    	text-align: center;
+    	background-color: #747a86;
+    	border-radius: 2px;
+    	padding: 9px 14px 9px 14px;
+    	border: 1px solid #747a86;
+    	display: inline-block;
+    	line-height: 1;
+    	margin-top: 16px;
+    	margin-left: 5px;
+   }
+   .textarea_submitBtn2 {
+   		min-width: 53px;
+    	font-size: 16px;
+    	color: #fff !important;
+    	text-align: center;
+    	background-color: #747a86;
+    	border-radius: 2px;
+    	padding: 9px 14px 9px 14px;
+    	border: 1px solid #747a86;
+    	display: inline-block;
+    	line-height: 1;
+    	margin-top: 16px;
+    	margin-left: 5px;
+   }
+   .emo_box {
+   		display: none;
+   		border: 1px solid #cecece;
+   		padding-bottom: 20px;
+   		position: relative;
+    	top: 4px;
+   }
+   .emo_imgBox {
+   		display: flex;
+   		flex-wrap: wrap;
+   		row-gap: 17px;
+   		column-gap: 17px;
+   }
+   .emo_close {
+   		display: flex;
+        justify-content: flex-end;
+    	margin-right: 20px;
+   }
+   .emo_close a {
+   		color: #666666;
+   		text-decoration: none;
+   		width: 38px;
+    	font-size: 12px;
+    	border: 1px solid #cecece;
+    	height: 25px;
+    	text-align: center;
+    	line-height: 23px;
+   }
+   .form_img_option {
+   		position: absolute;
+   		margin-left: 15px;
+    	width: 40px;
+   }
+   .emo_delete_btn {
+   		position: relative;
+    	left: 55px;
+    	top: 12px;
+   }
+   .each_users_comments {
+   		height: 110px;
+   		border-bottom: 1px solid #e3e3e3;
+   		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	margin-left: 26px;
+    	
+   }
+   .each_users_comments_comment {
+   		word-wrap: break-word;
+   		font-size: 13px;
+    	color: #666666;
+    	line-height: 20px;
+    	margin-top: 8px;
+   }
+   .comment_comment {
+   		font-size: 13px;
+    	padding: 3px 4px;
+    	line-height: 1;
+    	border: 1px solid #e6e6e6;
+    	color: #666666;
+    	text-decoration: none;
+   }
+   .comment_modify {
+   		font-size: 13px;
+    	padding: 3px 4px;
+    	line-height: 1;
+    	border: 1px solid #e6e6e6;
+    	color: #666666;
+    	text-decoration: none;
+   }
+   
+   .comment_delete, .comment_comment_modify {
+   		font-size: 13px;
+    	padding: 3px 4px;
+    	line-height: 1;
+    	border: 1px solid #e6e6e6;
+    	color: #666666;
+    	text-decoration: none;
+   }
+   .comment_comment_delete {
+   		font-size: 13px;
+    	padding: 3px 4px;
+    	line-height: 1;
+    	border: 1px solid #e6e6e6;
+    	color: #666666;
+    	text-decoration: none;
+   }
+   .comment_comment_islogin {
+   		display: none;
+   }
+   .comment_declare img {
+   		margin-bottom: 2px;
+   }
+   .user_name {
+   		margin-left: 4px;
+    	color: #333333;
+    	font-size: 14px;
+    	font-weight: bold;
+    	margin-left: 4px;
+   }
+   .user_comment_regdate {
+   		font-size: 12px;
+    	color: #888;
+    	margin-left: 4px;
+   }
+   .more_page {
+   		color: #888;
+    	font-size: 15px;
+    	font-family: "Tahoma";
+    	text-decoration: none;
+    	margin: 20px;
+   }
+   .comment_commentBox {
+   		display: none;
+   }
+   .comment_comment_submitBtn {
+   		height: 56px;
+   		background-color: #e8eaee;
+   		display: flex;
+    	justify-content: flex-end;
+    	align-items: center;
+   }
+   .comment_comment_info{
+   		display: flex;
+    	padding-left: 45px;
+   }
+   .comment_arrow {
+   		height: 20px;
+   }
+   .comment_comment_form {
+   		height: 110px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    background-color: #f9f9f9;
+   }
+   .comment_comment_target_id {
+   		color: #8da2cc;
+   		text-decoration: none;
+   }
+   .delete_msg_style {
+   		font-size: 13px;
+    	color: #666666;
+    	height: 110px;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	border-top:1px solid #cecece;
+    	border-bottom: 1px solid #cecece;
+    	
+   }
+   .delete_msg_style > span {
+   		display: block;
+   		margin-left: 45px;
+   }
+   .qs_btn {
+   		width: 72%;
+   		margin-left: 200px;
+   		border-top: 1px solid #cecece;
+   		height: 50px;
+   		margin-top: 30px;
+   }
+   .qs_btn > div {
+   		margin-top: 15px;
+    	margin-left: 10px;
+   }

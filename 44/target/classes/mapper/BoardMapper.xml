@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board">
+   <sql id="searchCondition">
+      <choose>
+         <when test="title != null and content != null">
+            WHERE title LIKE '%'||#{title}||'%' OR content LIKE '%'||#{content}||'%'
+         </when>
+         <when test="title != null">
+            WHERE title LIKE '%'||#{title}||'%'
+         </when>
+         <when test="writer != null">
+            WHERE writer LIKE '%'||#{
+            
+            writer}||'%'
+         </when>
+      </choose>
+   </sql>
+  
+   <insert id="insert" parameterType="boardDto">
+      INSERT INTO maple_board
+      (num,title,writer,content,viewCount,regdate,agree)
+      VALUES(maple_board_seq.NEXTVAL, #{title}, #{writer},
+      #{content}, 0, SYSDATE, 0)
+   </insert>
+   
+   <delete id="delete" parameterType="int">
+   		DELETE FROM maple_board
+   		WHERE num = #{num}
+   </delete>
+   
+   <update id="update" parameterType="BoardDto">
+   		UPDATE maple_board
+   		SET title = #{title}, content=#{content}
+   		WHERE num = #{num} AND writer=#{writer}
+   </update>
+   
+   <select id="getList" parameterType="boardDto" resultType="boardDto">
+   SELECT num, title, writer, content, viewcount, regdate, agree, server, rnum
+   FROM
+   (SELECT num, title, writer, content, viewcount, regdate, agree, server, ROWNUM as rnum
+   FROM 
+   (SELECT num, title, writer, content, viewcount, b.regdate, agree, u.server
+   FROM maple_board b
+   INNER JOIN maple_users u on b.writer = u.id
+   <include refid="searchCondition"/>
+   ORDER BY NUM DESC))
+   WHERE rnum BETWEEN #{startRowNum} AND #{endRowNum}
+   </select>
+   
+   <select id="getCount" parameterType="boardDto" resultType="int">
+   SELECT NVL(MAX(ROWNUM), 0)
+   FROM maple_board
+   <include refid="searchCondition"/>
+   </select>
+   
+   <select id="getDetail" parameterType="int" resultType="boardDto">
+     SELECT result1.*
+     FROM
+     ((SELECT num, title, writer, content, viewcount, agree, b.regdate, u.server,
+       LAG(num, 1, 0) OVER (ORDER BY num DESC) nextNum,
+     LEAD(num, 1, 0) OVER (ORDER BY num DESC) prevNum,
+       CASE WHEN LAG(content, 1) OVER (ORDER BY num DESC) IS NULL THEN '마지막 글입니다.'
+             ELSE LAG(content, 1, 0) OVER (ORDER BY num DESC)
+        END nextContent,
+        CASE WHEN LEAD(content, 1) OVER (ORDER BY num DESC) IS NULL THEN '마지막 글입니다.'
+             ELSE LEAD(content, 1, 0) OVER (ORDER BY num DESC)
+        END prevContent,
+         LAG(b.regdate, 1, NULL) OVER(ORDER BY num DESC) nextRegDate,
+LEAD(b.regdate, 1, NULL) OVER(ORDER BY num DESC) prevRegDate
+   FROM maple_board b
+   INNER JOIN maple_users u on b.writer = u.id
+   <include refid="searchCondition"/>) result1)
+   WHERE num = #{num}
+   </select>
+   
+   <update id="addViewCount" parameterType="int">
+      UPDATE maple_board
+      SET viewcount = viewcount + 1
+      WHERE num = #{num}
+   </update>
+   
+   <update id="addAgree" parameterType="int">
+   	  UPDATE maple_board
+   	  SET agree = agree + 1
+   	  WHERE num = #{num}
+   </update>
+   
+   <select id="getAgreeCount" parameterType="int" resultType="boardDto">
+   	  SELECT agree 
+   	  FROM maple_board
+   	  WHERE num = #{num}
+   </select>
+ 
+</mapper>

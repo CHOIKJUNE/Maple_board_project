@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  <configuration>
+  	<settings>
+    	<setting name="cacheEnabled" value="false" /> 
+        <setting name="jdbcTypeForNull" value="NULL" /> 
+    </settings> 
+    
+    <typeAliases>
+  		<typeAlias type="com.maple.spring.usersdto.UsersDto" alias="usersDto"/>
+  		<typeAlias type="com.maple.spring.boarddto.BoardDto" alias="boardDto"/>
+  		<typeAlias type="com.maple.spring.boarddto.BoardCommentDto" alias="boardCommentDto"/>
+  	</typeAliases>
+  	
+  	<mappers>
+  		<mapper resource="mapper/UsersMapper.xml"/>
+  		<mapper resource="mapper/BoardMapper.xml"/>
+  		<mapper resource="mapper/BoardCommentMapper.xml"/>
+  	</mappers>
+  </configuration>
